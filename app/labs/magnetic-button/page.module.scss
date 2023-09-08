@@ -13,6 +13,10 @@
       color: black;
       font-weight: 800;
       cursor: pointer;
+      font-size: 72px;
+      background: linear-gradient(85deg, #ff9b04 27.02%, #be48f5 50.3%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     &:hover {
