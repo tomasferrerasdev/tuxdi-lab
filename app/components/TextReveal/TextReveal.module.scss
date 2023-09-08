@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 100vh;
+  color: rgb(13, 13, 13);
+}
+
+.textContainer {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.textContainer p {
+  font-size: 3.5vw;
+  margin: 0px;
+  margin-right: 1.5vw;
+  font-weight: 700;
+}
+
+.textContainer span {
+  opacity: 0.2;
+}
