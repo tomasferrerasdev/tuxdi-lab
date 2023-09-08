@@ -1,11 +1,12 @@
 "use client";
+
 import { Canvas, useLoader } from "@react-three/fiber";
 import { useRef } from "react";
 import { useScroll } from "framer-motion";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
 import { motion } from "framer-motion-3d";
 
-export const Earth = () => {
+export default function Earth() {
   const scene = useRef(null);
   const { scrollYProgress } = useScroll({
     target: scene,
@@ -28,4 +29,4 @@ export const Earth = () => {
       </motion.mesh>
     </Canvas>
   );
-};
+}

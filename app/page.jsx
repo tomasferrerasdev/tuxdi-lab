@@ -8,6 +8,7 @@ export default function Home() {
         <div className={styles.navbarLinks}>
           <a href="/labs/magnetic-button">magnetic button</a>
           <a href="/labs/text-reveal">text reveal</a>
+          <a href="/labs/smooth-scroll">three</a>
         </div>
       </div>
     </main>

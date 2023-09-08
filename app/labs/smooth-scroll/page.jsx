@@ -1,6 +1,11 @@
 import { SmoothScroll } from "@/app/components/SmoothScroll/SmoothScroll";
 import styles from "./page.module.scss";
-import { Earth } from "@/app/components/Earth/Earth";
+import dynamic from "next/dynamic";
+
+const Earth = dynamic(() => import("../../components/Earth/Earth"), {
+  ssr: false,
+  loading: () => <img src="/assets/placeholder.png"></img>,
+});
 
 export default function SmoothScrollPage() {
   return (
