@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: white;
+
+  .textContainer {
+    padding: 24px;
+
+    h1 {
+      font-size: 64px;
+      color: black;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    &:hover {
+      h1 {
+        color: #ec4e39;
+      }
+    }
+  }
+}
