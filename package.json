@@ -9,12 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.56.28",
     "@react-three/fiber": "^8.14.1",
     "@studio-freight/lenis": "^1.0.22",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "framer-motion-3d": "^10.16.4",
     "gsap": "^3.12.2",
+    "lamina": "^1.1.23",
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",

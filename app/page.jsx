@@ -9,6 +9,7 @@ export default function Home() {
           <a href="/labs/magnetic-button">magnetic button</a>
           <a href="/labs/text-reveal">text reveal</a>
           <a href="/labs/smooth-scroll">three</a>
+          <a href="/labs/three-plane">three-plane</a>
         </div>
       </div>
     </main>
