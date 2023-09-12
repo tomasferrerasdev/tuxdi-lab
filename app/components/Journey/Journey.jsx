@@ -4,6 +4,7 @@ import { Cloud3D } from "./Cloud3D";
 import { OrbitControls } from "@react-three/drei";
 import { useControls } from "leva";
 import { useMemo } from "react";
+import { Perf } from "r3f-perf";
 
 export const Journey = () => {
   const options = useMemo(() => {
@@ -38,6 +39,7 @@ export const Journey = () => {
         rotation={[cC.x, cC.y, cC.z]}
         visible={cC.visible}
       />
+      <Perf position="top-left" />
     </>
   );
 };

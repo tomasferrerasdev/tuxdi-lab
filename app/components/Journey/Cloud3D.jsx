@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Cloud3D({ position, rotation, visible }) {
-  const { nodes, materials } = useGLTF("/assets/models/cloud3D/cloud3D.glb");
+  const { nodes } = useGLTF("/assets/models/cloud3D/cloud3D.glb");
   return (
     <group
       dispose={null}

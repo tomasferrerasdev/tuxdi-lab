@@ -1,9 +1,9 @@
 import { useGLTF } from "@react-three/drei";
 
-export function Plane(props) {
-  const { nodes, materials } = useGLTF("/assets/models/airplane/airplane.glb");
+export function Plane() {
+  const { nodes } = useGLTF("/assets/models/airplane/airplane.glb");
   return (
-    <group {...props} dispose={null}>
+    <group dispose={null}>
       <mesh
         geometry={nodes.Cylinder.geometry}
         material={nodes.Cylinder.material}
