@@ -14,6 +14,7 @@ const ThreePlane = () => {
       >
         <color attach="background" args={["#ececec"]} />
         <Journey />
+        <axesHelper args={[5]} />
       </Canvas>
     </div>
   );
