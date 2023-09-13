@@ -2,19 +2,16 @@
 import { Journey } from "@/app/components/Journey/Journey";
 import { Canvas } from "@react-three/fiber";
 import styles from "./page.module.css";
+import { ScrollControls } from "@react-three/drei";
 
 const ThreePlane = () => {
   return (
     <div className={styles.container}>
-      <Canvas
-        camera={{
-          position: [0, 0, 5],
-          fov: 30,
-        }}
-      >
+      <Canvas>
         <color attach="background" args={["#ececec"]} />
-        <Journey />
-        <axesHelper args={[5]} />
+        <ScrollControls pages={5} damping={0.3}>
+          <Journey />
+        </ScrollControls>
       </Canvas>
     </div>
   );

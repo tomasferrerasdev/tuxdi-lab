@@ -1,10 +1,11 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
-export function Cloud3D({ position, rotation, visible }) {
+export function Cloud3D({ position, rotation, visible, scale }) {
   const { nodes } = useGLTF("/assets/models/cloud3D/cloud3D.glb");
   return (
     <group
+      scale={scale}
       dispose={null}
       position={position}
       rotation={rotation}
