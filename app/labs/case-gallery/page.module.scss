@@ -1,0 +1,68 @@
+.caseContainer {
+  position: relative;
+  .galleryContainer {
+    background: rgb(45, 45, 45);
+    padding: 2vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+    .gallery {
+      transform: rotate(-2deg) translateX(20px);
+      height: 150vh;
+      position: relative;
+      display: flex;
+      gap: 2vw;
+    }
+  }
+}
+
+.spacer {
+  height: 100%;
+  padding: 128px 24px;
+
+  h1 {
+    font-size: 92px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 24px;
+  }
+}
+
+.cta {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .cta {
+    width: 260px;
+    height: 260px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    right: 100px;
+    top: -135px;
+    z-index: 99;
+    border: 10px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .spacer {
+    height: 100%;
+    padding: 128px 24px;
+
+    h1 {
+      font-size: 128px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 32px;
+      max-width: 1000px;
+    }
+  }
+}
