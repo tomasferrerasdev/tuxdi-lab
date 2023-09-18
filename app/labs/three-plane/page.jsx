@@ -7,8 +7,7 @@ import { ScrollControls } from "@react-three/drei";
 const ThreePlane = () => {
   return (
     <div className={styles.container}>
-      <Canvas>
-        <color attach="background" args={["#ececec"]} />
+      <Canvas frameloop="demand">
         <ScrollControls pages={5} damping={0.3}>
           <Journey />
         </ScrollControls>

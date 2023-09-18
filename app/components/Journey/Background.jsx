@@ -10,7 +10,6 @@ export const Background = () => {
         background
         blur={0.5}
       />
-      
     </>
   );
 };
