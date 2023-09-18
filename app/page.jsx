@@ -11,6 +11,7 @@ export default function Home() {
           <a href="/labs/smooth-scroll">three</a>
           <a href="/labs/three-plane">three-plane</a>
           <a href="/labs/car-showcase">car-showcase</a>
+          <a href="/labs/case-gallery">case-gallery</a>
         </div>
       </div>
     </main>
