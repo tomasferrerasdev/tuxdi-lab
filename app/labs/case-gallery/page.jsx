@@ -6,18 +6,18 @@ import { Column } from "@/app/components/Column/Column";
 import styles from "./page.module.scss";
 
 const images = [
-  "eleco-first.webp",
-  "eleco-2.png",
-  "eleco.png",
-  "eleco-2.png",
-  "eleco-3.png",
-  "eleco-4.png",
-  "eleco-3.png",
-  "eleco-4.png",
-  "eleco-first.webp",
-  "eleco-5.png",
-  "eleco.png",
-  "eleco-5.png",
+  "eleco.webp",
+  "eleco-2.webp",
+  "eleco.webp",
+  "eleco-2.webp",
+  "eleco-3.webp",
+  "eleco-4.webp",
+  "eleco-3.webp",
+  "eleco-4.webp",
+  "eleco.webp",
+  "eleco-5.webp",
+  "eleco.webp",
+  "eleco-5.webp",
 ];
 
 export default function CaseGalleryPage() {

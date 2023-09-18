@@ -9,7 +9,13 @@ export const Column = ({ images, y }) => {
         {images.map((src, i) => {
           return (
             <div key={i} className={styles.imageContainer}>
-              <Image src={`/assets/cases/${src}`} alt="image" fill />
+              <Image
+                src={`/assets/cases/${src}`}
+                alt="image"
+                fill
+                priority
+                quality={60}
+              />
             </div>
           );
         })}
