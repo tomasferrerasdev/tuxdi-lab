@@ -22,42 +22,40 @@ export const Hero = () => {
   }, []);
 
   return (
-    <div className={styles.container}>
-      <section className={styles.hero}>
-        <div ref={overlayRef} className={styles.hero__overlay}></div>
-        <Image
-          priority
-          fill
-          className={styles.hero__image}
-          src="/assets/case-preview/ford.jpg"
-          alt=""
-        />
-        <div className={styles.hero__content}>
-          <div className={styles.hero__titleWrapper}>
-            <h1 className={styles.hero__title} ref={titleRef}>
-              Ford Motorsports
-            </h1>
-          </div>
-          <p className={styles.hero__text}>
-            <span>
-              <span ref={(text) => textRefs.current.push(text)}>
-                Ford’s Journey in Automating their Agency Management
-              </span>
-            </span>
-            <span>
-              <span ref={(text) => textRefs.current.push(text)}>
-                Process for Scopes of Work and Performance Evaluations
-              </span>
-            </span>
-            <span>
-              <span ref={(text) => textRefs.current.push(text)}>
-                Organizational Success to Achieve Informed Marketing Investment
-                Strategy
-              </span>
-            </span>
-          </p>
+    <section className={styles.hero}>
+      <div ref={overlayRef} className={styles.hero__overlay}></div>
+      <Image
+        priority
+        fill
+        className={styles.hero__image}
+        src="/assets/case-preview/ford.jpg"
+        alt=""
+      />
+      <div className={styles.hero__content}>
+        <div className={styles.hero__titleWrapper}>
+          <h1 className={styles.hero__title} ref={titleRef}>
+            Ford Motorsports
+          </h1>
         </div>
-      </section>
-    </div>
+        <p className={styles.hero__text}>
+          <span>
+            <span ref={(text) => textRefs.current.push(text)}>
+              Ford’s Journey in Automating their Agency Management
+            </span>
+          </span>
+          <span>
+            <span ref={(text) => textRefs.current.push(text)}>
+              Process for Scopes of Work and Performance Evaluations
+            </span>
+          </span>
+          <span>
+            <span ref={(text) => textRefs.current.push(text)}>
+              Organizational Success to Achieve Informed Marketing Investment
+              Strategy
+            </span>
+          </span>
+        </p>
+      </div>
+    </section>
   );
 };

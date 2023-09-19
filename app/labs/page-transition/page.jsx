@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { gsap } from "gsap";
 import { ImageGrid } from "@/app/components/ImageGrid/ImageGrid";
 
-const pageTransition = () => {
+const PageTransition = () => {
   const router = useRouter();
   const [timeline, setTimeline] = useState(null);
 
@@ -23,4 +23,4 @@ const pageTransition = () => {
   return <ImageGrid timeline={timeline} />;
 };
 
-export default pageTransition;
+export default PageTransition;

@@ -1,65 +1,61 @@
-.container {
-  height: 200vh;
-  background-color: black;
-  .hero {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  &__overlay {
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 84%
+    );
+  }
+
+  img {
+    height: 100%;
     width: 100%;
-    height: 100vh;
+    object-fit: cover;
+  }
+
+  &__content {
+    display: flex;
+    gap: 16rem;
+    align-items: center;
+    position: absolute;
+    bottom: 10vh;
+    left: 6.4rem;
+    z-index: 2;
+    color: white;
+  }
+
+  &__titleWrapper {
+    display: block;
     overflow: hidden;
+  }
 
-    &__overlay {
-      opacity: 0;
-      position: absolute;
-      inset: 0;
-      z-index: 2;
-      background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 0) 66%
-      );
-    }
+  &__title {
+    transform: translateY(100%);
+    font-size: 6rem;
+  }
 
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
+  &__text {
+    font-size: 1.6rem;
 
-    &__content {
-      display: flex;
-      gap: 16rem;
-      align-items: center;
-      position: absolute;
-      bottom: 6vh;
-      left: 6.4rem;
-      z-index: 2;
-      color: white;
-    }
-
-    &__titleWrapper {
+    span {
       display: block;
       overflow: hidden;
     }
 
-    &__title {
+    span span {
       transform: translateY(100%);
-      font-size: 6rem;
-    }
-
-    &__text {
-      font-size: 1.6rem;
-
-      span {
-        display: block;
-        overflow: hidden;
-      }
-
-      span span {
-        transform: translateY(100%);
-      }
     }
   }
 }
