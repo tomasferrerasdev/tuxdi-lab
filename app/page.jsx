@@ -13,6 +13,7 @@ export default function Home() {
           <a href="/labs/car-showcase">car-showcase</a>
           <a href="/labs/case-gallery">case-gallery</a>
           <a href="/labs/page-transition">page-transitions</a>
+          <a href="/labs/page-transition-wave">page-transition-wave</a>
         </div>
       </div>
     </main>
