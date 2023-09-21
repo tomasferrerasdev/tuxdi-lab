@@ -14,6 +14,12 @@ export default function Home() {
           <a href="/labs/case-gallery">case-gallery</a>
           <a href="/labs/page-transition">page-transitions</a>
           <a href="/labs/page-transition-wave">page-transition-wave</a>
+          <a href="/labs/fullscreen-menu">fullscreen-menu</a>
+          <a href="/labs/gravity">gravity</a>
+          <a href="/labs/attraction">attraction</a>
+          <a href="/labs/incredibly-squeezable-duck">
+            incredibly-squeezable-duck
+          </a>
         </div>
       </div>
     </main>

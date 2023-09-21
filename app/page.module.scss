@@ -1,5 +1,7 @@
 .main {
   background-color: white;
+  height: 100vh;
+  width: 100%;
 
   .navbar {
     display: flex;
@@ -17,5 +19,15 @@
       justify-content: center;
       gap: 16px;
     }
+  }
+  .cursor {
+    background-color: #111;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
   }
 }
